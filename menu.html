@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="halloween">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>X PPLG 2</title>
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,26 +14,30 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.36.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script src="tailwind.config.js"></script>
 </head>
 <style>
-    .menu {
-        color: white;
-        text-align: center;
-        font-family: 'Courgette', cursive;
-        font-size: 50px;
-        margin: 0;
+    body {
+        background: linear-gradient(-45deg, #c3b1fb, #c9d2f9, #f3bfff);
+        animation: gradient 15s ease infinite;
     }
 
-    .submenu {
-        color: white;
-        text-align: center;
-        font-family: 'Courgette', cursive;
-        font-size: 25px;
-        font: bold;
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
     }
 
-    .padding {
-        padding: 10px;
+    .card-custom {
+        background: linear-gradient(880deg, #6e40f9, #f2d4f9);
     }
 </style>
 
@@ -52,7 +56,7 @@
                     class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="#">Menu</a></li>
-                    <li><a href="pertunjukan.html">Pertunjukan</a></li>
+                    <li><a href="pertunjukan.html">Penampilan</a></li>
                 </ul>
             </div>
         </div>
@@ -61,36 +65,52 @@
         </div>
     </div>
 
-    <div class="padding">
-        <p class="submenu">Semur jengkol</p>
-        <img src="image/Resep-Semur-Jengkol.png" width="100%" height="50%" />
-        <hr>
-        <p class="submenu">Kue talam</p>
-        <img src="image/Kue Talam.png" width="100%" height="50%">
-        <hr>
-        <p class="submenu">Asinan Betawi</p>
-        <img src="image/Asinan betawi.png" width="100%" height="50%">
-        <hr>
-        <p class="submenu">Selendang Mayang</p>
-        <img src="image/Slendang mayang.png" width="100%" height="50%">
-        <hr>
-        <p class="submenu">Sayur Asem</p>
-        <img src="image/Sayur asem.png" width="100%" height="50%">
-        <hr>
-        <p class="submenu">Ikan Gabus</p>
-        <img src="image/ikan gabus.png" width="100%" height="50%">
-        <hr>
-        <p class="submenu">Sambel Goreng</p>
-        <img src="image/sambel goreng.png" width="100%" height="50%">
-        <hr>
-        <p class="submenu">Bir Pletok</p>
-        <img src="image/Bir pletok.png" width="100%" height="50%">
-        <hr>
-        <p class="submenu">kue Akar Kelapa</p>
-        <img src="image/Kue akar kelapa.png" width="100%" height="50%">
-        <hr>
-        <p class="submenu">Soto Betawi</p>
-        <img src="image/Soto Betawi .png" width="100%" height="50%">
+    <div class="padding flex flex-wrap -mx-1 lg:-mx-4 justify-center">
+        <div class="card card-compact w-96 bg-base-100 shadow-xl mt-10 mr-10 ml-10 card-custom">
+            <figure><img src="image/kue-cucur.png" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title justify-center">Kue Cucur</h2>
+                <div class="card-actions justify-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card card-compact w-96 bg-base-100 shadow-xl mt-10 mr-10 ml-10 card-custom">
+            <figure><img src="image/Slendang mayang.png" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title justify-center">Slendang Mayang</h2>
+                <div class="card-actions justify-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card card-compact w-96 bg-base-100 shadow-xl mt-10 mr-10 ml-10 card-custom">
+            <figure><img src="image/Bir pletok.png" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title justify-center">Bir Pletok</h2>
+                <div class="card-actions justify-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card card-compact w-96 bg-base-100 shadow-xl mt-10 mr-10 ml-10 card-custom">
+            <figure><img src="image/akar-kelapa.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title justify-center">Kue Akar Kelapa</h2>
+                <div class="card-actions justify-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="card card-compact w-96 bg-base-100 shadow-xl mt-10 mr-10 ml-10 card-custom">
+            <figure><img src="image/kolang-kaling.png" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title justify-center">Es Kolang Kaling</h2>
+                <div class="card-actions justify-center">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer items-center p-4 bg-neutral text-neutral-content">
