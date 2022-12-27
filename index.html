@@ -12,84 +12,92 @@
 
     <!-- DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.36.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        .responsive {
+            min-width: 28rem;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h7" />
-                    </svg>
-                </label>
-                <ul tabindex="0"
-                    class="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="pertunjukan.html">Penampilan</a></li>
+    <div class="responsive">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="pertunjukan.html">Penampilan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <a class="text-xl normal-case btn btn-ghost">X PPLG 2</a>
+            </div>
+        </div>
+    
+        <div class="min-h-screen hero bg-base-200" style="
+            background-image: url('image/jakarta.jpg');
+            background-repeat: no-repeat;
+          ">
+            <div class="text-center hero-content card w-96 rounded-2xl bg-primary text-primary-content"
+                style="background-color: #ffffffcf">
+                <div class="max-w-md">
+                    <div class="inline-block align-center">
+                        <img src="image/pplg.png" width="150" style="float: left; margin-right: 35px" alt="" />
+                        <img src="image/logo.png" width="150" style="margin-left: auto; margin-right: auto" alt="" />
+                    </div>
+                    <br />
+                    <br />
+                    <h1 class="text-3xl font-bold">Ready for this event?</h1>
+                    <h1 class="text-2xl font-bold" style="color: rgb(242 140 24)">
+                        "Hajatan Betawi SMKN 1 Jakarta"
+                    </h1>
+                    <p class="py-6">
+                        Membangun rasa ingin tahu dan kemampuan inkuiri melalui eksplorasi
+                        tentang budaya dan kearifan lokal masyarakat sekitar atau daerah
+                        tersebut, serta perkembangannya.
+                    </p>
+                    <a class="btn btn-primary" style="color: #fff; background-color: rgb(242 140 24)" href="menu.html">Get
+                        Started</a>
+                </div>
+            </div>
+        </div>
+    
+        <div style="background-color: #ef9b41;" class="pt-5 ">
+            <div class="text-lg text-center text-white pb-7">
+                <ul>
+                    <li class="pb-1"><i class="ri-calendar-line"></i> <span class="font-semibold">Tanggal:</span> 10 November 2022
+                    <li class="pb-1"><i class="ri-map-pin-2-line"></i> <span class="font-semibold">LOKASI:</span> Lapangan
+                        <i><a href="https://goo.gl/maps/APTBcKy2fPfN7ELJA">SMK Negeri 1 Jakarta</a></i>
+                    </li>
+                    <li><i class="ri-time-line"></i> <span class="font-semibold">Waktu:</span> 07:00 - Selesai</li>
                 </ul>
             </div>
         </div>
-        <div class="navbar-end">
-            <a class="text-xl normal-case btn btn-ghost">X PPLG 2</a>
-        </div>
-    </div>
-
-    <div class="min-h-screen hero bg-base-200" style="
-        background-image: url('image/jakarta.jpg');
-        background-repeat: no-repeat;
-      ">
-        <div class="text-center hero-content card w-96 rounded-2xl bg-primary text-primary-content"
-            style="background-color: #ffffffcf">
-            <div class="max-w-md">
-                <div class="inline-block align-center">
-                    <img src="image/pplg.png" width="150" style="float: left; margin-right: 35px" alt="" />
-                    <img src="image/logo.png" width="150" style="margin-left: auto; margin-right: auto" alt="" />
-                </div>
-                <br />
-                <br />
-                <h1 class="text-3xl font-bold">Ready for this event?</h1>
-                <h1 class="text-2xl font-bold" style="color: rgb(242 140 24)">
-                    "Hajatan Betawi SMKN 1 Jakarta"
-                </h1>
-                <p class="py-6">
-                    Membangun rasa ingin tahu dan kemampuan inkuiri melalui eksplorasi
-                    tentang budaya dan kearifan lokal masyarakat sekitar atau daerah
-                    tersebut, serta perkembangannya.
-                </p>
-                <a class="btn btn-primary" style="color: #fff; background-color: rgb(242 140 24)" href="menu.html">Get
-                    Started</a>
-            </div>
-        </div>
-    </div>
-
-    <div style="background-color: #ef9b41;" class="pt-5 ">
-        <div class="text-lg text-center text-white pb-7">
-            <ul>
-                <li class="pb-1"><i class="ri-calendar-line"></i> <span class="font-semibold">Tanggal:</span> 10 November 2022
-                <li class="pb-1"><i class="ri-map-pin-2-line"></i> <span class="font-semibold">LOKASI:</span> Lapangan
-                    <i><a href="https://goo.gl/maps/APTBcKy2fPfN7ELJA">SMK Negeri 1 Jakarta</a></i>
-                </li>
-                <li><i class="ri-time-line"></i> <span class="font-semibold">Waktu:</span> 07:00 - Selesai</li>
-            </ul>
-        </div>
-    </div>
+        
     
-
-    <footer class="items-center p-4 text-neutral-content" style="background-color: #3d4451; color: #fff;">
-        <div class="items-center grid-flow-col text-center">
-            <a class="btn btn-secondary" href="https://api.whatsapp.com/send/?phone=+6285159978145&text=Hallo%2C+saya+ingin+memesan"><i class="text-2xl ri-shopping-cart-2-line"></i> <span class="text-2xl font-semibold">&nbsp;Delivery Order</span></a>
-            <p class="pt-5">Copyright © 2022 | by <b><a href="https://syaddadraihanputra.github.io/" target="_blank">Syaddad</a></b>
-            </p>
-            <small>Dibuat dengan <a href="https://tailwindcss.com/"><b class="text-teal-500">Tailwind</b></a></small>
-        </div>
-    </footer>
+        <footer class="items-center p-4 text-neutral-content" style="background-color: #3d4451; color: #fff;">
+            <div class="items-center grid-flow-col text-center">
+                <a class="btn btn-secondary" href="https://api.whatsapp.com/send/?phone=+6285159978145&text=Hallo%2C+saya+ingin+memesan"><i class="text-2xl ri-shopping-cart-2-line"></i> <span class="text-2xl font-semibold">&nbsp;Delivery Order</span></a>
+                <p class="pt-5">Copyright © 2022 | by <b><a href="https://syaddadraihanputra.github.io/" target="_blank">Syaddad</a></b>
+                </p>
+                <small>Dibuat dengan <a href="https://tailwindcss.com/"><b class="text-teal-500">Tailwind</b></a></small>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
